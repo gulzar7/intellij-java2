@@ -32,7 +32,16 @@ class librarian extends library
 
 		System.out.println("books returned successfully");
 		bookscount--;
-		System.out.println("number of books taken "+bookscount);
+
+		if(bookscount<0)
+		{
+			System.out.println("no books found");
+
+		}
+		else
+		{
+			System.out.println("number of books taken "+bookscount);
+		}
 
 
 
